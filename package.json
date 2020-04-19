@@ -1,0 +1,32 @@
+{
+	"name": "lua-611-clear",
+	"displayName": "Lua 611 Clear",
+	"description": "",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:lua-611-clear.helloWorld"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "lua-611-clear.helloWorld",
+				"title": "Hello World"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.44.0"
+	}
+}
